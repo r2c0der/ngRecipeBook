@@ -1,0 +1,9 @@
+
+
+<project-header (itemSelected)="showItemSelected($event)"></project-header>
+  <div class="container" [ngSwitch]="item">
+    <p *ngSwitchCase="'recipe'"><recipes></recipes> </p>
+    <p  *ngSwitchCase="'shopping'"> <shopping-list></shopping-list> </p>
+    <p *ngSwitchDefault> <img  src="../../assets/captures/recipeCover.jpg" class="img-responsive recipeCover" alt="Recipe Book Cover" /></p>
+
+  </div>

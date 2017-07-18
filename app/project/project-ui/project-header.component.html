@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+
+    <div class="navbar-header">
+      <a href="/project" class="navbar-brand brandTitle">rkmNgApp Recipe Book</a>
+    </div>
+
+ <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav rkmNavLeft">
+      <li><a (click)="onSelect('recipe')" class="fakeLink">Recipes</a></li>
+      <li><a (click)="onSelect('shopping')" class="fakeLink">Shopping List</a></li>
+    </ul>
+   <ul class="nav navbar-nav navbar-right rkmNavRight">
+     <li class="dropdown" rkmDropdown>
+      <a class="dropdown-toggle rkmapp_manageapp_dropdown" role="button">Manage App<span class="caret"></span></a>
+  <!--     <p href="#" class="dropdown-toggle" role="button">Manage App<span class="caret"></span></p>-->
+       <ul class="dropdown-menu">
+         <li><a href="">Save Data</a></li>
+         <li><a href="">Fetch Data</a></li>
+       </ul>
+     </li>
+
+   </ul>
+ </div>
+</nav>
+
+
+

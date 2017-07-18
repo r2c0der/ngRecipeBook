@@ -1,0 +1,35 @@
+
+<div class="container">
+  <h2>Server Application</h2>
+  <!--<p [innerText]="allowNewServer"></p>-->
+  <div class="row">
+    <div class="col-md-5">
+      <div class="form-group-lg">
+        <label for="serverName">Server Name</label>
+      <!--  <input  type="text" class="form-control" id="serverName" name="serverName" placeholder="Enter server name"
+        (input)="onUpdateServerName($event)"/>-->
+        <!--<p>{{serverName }}</p>-->
+
+        <input  type="text" class="form-control" id="serverName" name="serverName" placeholder="Enter server name"
+        [(ngModel)]="serverName"/>
+       <!--<p>{{serverName }}</p>-->
+      </div>
+
+    </div>
+
+  </div>
+
+   <h4 *ngIf="isServerCreated; else notCreated">{{ serverStatusMsg }}</h4>
+  <ng-template #notCreated>
+    <h4>No server has been created...</h4>
+  </ng-template>
+  <div class="row">
+    <div class="col-md-5">
+      <rkm-app-server *ngFor="let server of servers"></rkm-app-server>
+
+    </div>
+  </div>
+  <button class="btn btn-primary btn-lg" role="button"
+          [disabled]="!allowNewServer"
+          (click)="onAddServer()">Add Server</button>
+</div>

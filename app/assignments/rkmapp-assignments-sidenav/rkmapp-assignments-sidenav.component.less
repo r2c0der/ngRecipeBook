@@ -1,0 +1,76 @@
+.openbtn{
+  top:-3em;
+  float: left;
+  font-size:1.25em;
+  cursor: pointer;
+}
+
+.openbtn:hover{
+  color:#ff11ff;
+}
+
+.closebtn{
+  color:white;
+  float:right;
+}
+
+.closebtn:hover{
+  color:#ff11ff;
+
+}
+
+.sidenav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#222222;
+  overflow-x:hidden;
+  padding-top: 2em;
+  transition: 0.5s;
+}
+
+.sidenav a{
+  padding: 2em 2em 2em 2em;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: #ffffff;
+  display:block;
+/*  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;*/
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color:#ff11ff;
+}
+
+/*
+.sidenav {
+  position:absolute;
+  top: 0;
+  right:11em;
+  font-size: 1.25em;
+  margin-left: 7em;
+}
+*/
+
+
+@media screen and (max-height: 450px) {
+  .sidenav{ padding-top:15px; }
+  .sidenav a { font-size: 1.05em;}
+
+}
+
+.open{
+    width:250px;
+  opacity: .9;
+}
+
+.close{
+  width:0;
+}

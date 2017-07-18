@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-lg-4">
+
+        <h5>User with ID {{user.userID}}</h5>
+        <p>User name is: {{user.userFirstName}} {{user.userLastName}} </p>
+        <p>User Permission: <span [ngClass]="(user.userPermission ==='admin') ? ['admin'] : ['user']">{{user.userPermission}}</span> </p>
+      </div>
+
+  </div>
+      <hr />
+  <a [routerLink]="['/users',user.userID]">{{user.userFirstName}}</a>
+</div>

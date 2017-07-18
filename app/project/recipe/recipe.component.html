@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5" >
+      <recipe-list></recipe-list>
+    </div>
+    <div class="col-md-6">
+      <recipe-item-detail
+        *ngIf="selectedRecipe; else noRecipeSelected"
+        [recipe]="selectedRecipe" >
+      </recipe-item-detail>
+    </div>
+    <ng-template #noRecipeSelected></ng-template>
+    <p></p>
+  </div>
+
+</div>
+

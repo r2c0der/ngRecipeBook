@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-5 col-lg-5">
+      <h5 >{{server.serverName}}</h5>
+      <p>Server status: <span [ngClass]="{online: server.serverStatus === 'online', offline: server.serverStatus === 'offline'}">{{server.serverStatus}}</span></p>
+    </div>
+  </div>
+
+</div>

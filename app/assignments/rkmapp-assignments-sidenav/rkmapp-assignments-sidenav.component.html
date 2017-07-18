@@ -1,0 +1,17 @@
+  <div class="container">
+
+    <span (click)="onOpenNav()" class="openbtn"><i class="fa fa-bars fa-1x" aria-hidden="true"></i>&nbsp;Menu</span>
+    <div id="rkmasgsidenav" class="sidenav" [ngClass]="{'open': sideNavOpen, 'close': !sideNavOpen}">
+
+      <a routerLink="/asgone" style="cursor: pointer">Assignment One</a>
+      <a  routerLink="/asgtwo" style="cursor: pointer">Assignment Two</a>
+      <a  routerLink="/asgthree" style="cursor: pointer">Assignment Three</a>
+      <a  routerLink="/asgfour" style="cursor: pointer">Assignment Four</a>
+      <a  routerLink="/asgfive" style="cursor: pointer">Assignment Five</a>
+      <a style="cursor: pointer"  (click)="onCloseNav()"><i class="fa fa-times fa-2x closebtn" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+
+

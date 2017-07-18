@@ -1,0 +1,30 @@
+
+<div class="container">
+  <rkmapp-asg-sidenav></rkmapp-asg-sidenav>
+  <h1>Assignment Three | Practicing Directives </h1>
+  <div class="row">
+    <div class="col-md-6">
+
+      <button class="btn btn-primary btn-lg" role="button" (click)="onToggle()">Display Details</button>
+    </div>  <!-- /col-1 -->
+  </div>  <!-- /row-1 -->
+  <div class="row">
+        <div class="col-md-8">
+         <p *ngIf="isShowing == true; else notShowing"> Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+         </p>
+          <ng-template #notShowing>
+            <p></p>
+
+          </ng-template>
+
+        </div>
+
+  </div>  <!-- /row-2 -->
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor="let click of clicks; let idx = index;"
+      [ngClass]="(idx >= 4) ? 'log5' : 'log'">{{click}}</div>
+    </div>
+  </div>
+</div> <!-- /container -->

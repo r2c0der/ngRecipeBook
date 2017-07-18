@@ -1,0 +1,24 @@
+<!--<rkmapp-navbar></rkmapp-navbar>-->
+
+<div class="container">
+  <rkmapp-asg-sidenav></rkmapp-asg-sidenav>
+  <h1>Assignment Two | Practicing Databinding</h1>
+  <div class="row">
+    <div class="col-md-6">
+    <div class="form-group-lg">
+      <label for="userName">UserName</label>
+      <input type="text" class="form-control"
+             id="userName" name="userName"
+             [(ngModel)]="userName"
+             />
+    </div>  <!-- /form control -->
+      <button class="btn btn-primary btn-sm" role="button"
+      (click) ="onUpdateUserName()">Update User Name</button>
+      <button class="btn btn-default btn-sm" role="button"
+              [disabled] ="isUserNameEmpty" (click)="onReset()">Clear Input</button>
+      <h4>{{userNameMsg}}</h4>
+    </div>  <!-- /col-->
+
+
+  </div> <!-- /row -->
+</div> <!-- /container -->

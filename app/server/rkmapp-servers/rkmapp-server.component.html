@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+
+      <div class="well hoverwell" [ngClass]="(serverStatus=='online') ? ['online'] : ['offline']">
+        <p ><i class="fa fa-server fa-2x" aria-hidden="true"></i>
+          &nbsp;{{serverName}} with ID {{ serverID }} is {{getServerStatus() }}.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
